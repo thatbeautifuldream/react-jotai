@@ -1,9 +1,10 @@
 import { useAtom } from "jotai";
 import "./App.css";
-import Counter from "./Counter";
-import DoubleCounter from "./DoubleCounter";
 import { counterAtom } from "./atoms";
+import CounterControls from "./CounterControls";
+import DoubleCounter from "./DoubleCounter";
 import UserInfo from "./UserInfo";
+import ShoppingCart from "./ShoppingCart";
 
 function App() {
   const [count] = useAtom(counterAtom);
@@ -12,11 +13,12 @@ function App() {
     <>
       <h1>React + Jotai</h1>
       <div className="card">
-        <h1>Count: {count}</h1>
-        <Counter />
+        <p>Count: {count}</p>
         <DoubleCounter />
+        <CounterControls />
       </div>
       <UserInfo />
+      <ShoppingCart />
     </>
   );
 }

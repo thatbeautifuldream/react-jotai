@@ -1,7 +1,7 @@
 import { useAtom } from "jotai";
 import { counterAtom } from "./atoms";
 
-const Counter = () => {
+const CounterControls = () => {
   const [_, setCount] = useAtom(counterAtom);
 
   return (
@@ -12,4 +12,4 @@ const Counter = () => {
   );
 };
 
-export default Counter;
+export default CounterControls;

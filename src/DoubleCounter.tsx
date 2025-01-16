@@ -4,7 +4,7 @@ import { doubledCounterAtom } from "./atoms";
 export const DoubleCounter = () => {
   const [doubledCount] = useAtom(doubledCounterAtom);
 
-  return <h1>Double Counter: {doubledCount}</h1>;
+  return <p>Double Counter: {doubledCount}</p>;
 };
 
 export default DoubleCounter;
