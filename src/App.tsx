@@ -3,6 +3,7 @@ import "./App.css";
 import Counter from "./Counter";
 import DoubleCounter from "./DoubleCounter";
 import { counterAtom } from "./atoms";
+import UserInfo from "./UserInfo";
 
 function App() {
   const [count] = useAtom(counterAtom);
@@ -15,6 +16,7 @@ function App() {
         <Counter />
         <DoubleCounter />
       </div>
+      <UserInfo />
     </>
   );
 }
